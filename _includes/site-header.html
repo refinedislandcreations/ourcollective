@@ -2,14 +2,14 @@
     <!-- Transparent Navigation -->
     <div class="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30">
         <a href="/" class="logo">
-            <h2 class="text-white">LOGO</h2>
+            <img src="/images/our-collective-logo.png" alt="" class="w-44">
         </a>
         <nav class="text-white">
             <a href="#" class="mx-4">Havening</a>
             <a href="#" class="mx-4">About</a>
             <a href="#" class="mx-4">Contact</a>
-            <a href="#" class="mx-4">Log In</a>
-            <a href="#" class="button mx-4">Book Now</a>
+            <a href="#" class="ml-4 mr-6 underline underline-offset-4">Log In</a>
+            <a href="#" class="btn-grad mx-4">Book A Call</a>
         </nav>
     </div>
 
@@ -23,9 +23,9 @@
         <!-- Text Column -->
         <div class="relative z-20 flex flex-col items-center justify-center p-5p bg-opacity-75 sm:bg-transparent">
             <div class="text-center">
-                <p>{{ page.header.pretitle }}</p>
-                <p>{{ page.header.title }}</p>
-                <p>{{ page.header.subtitle }}</p>
+                <p class="small-title pb-2p">{{ page.header.pretitle }}</p>
+                <p class="main-title text-5xl pb-5p">{{ page.header.title }}</p>
+                <p class="px-15p mb-10p">{{ page.header.subtitle }}</p>
                 <div data-aos="fade-down">
                     <a href="#" class="btn-grad">{{ page.header.cta }}</a>
                 </div>

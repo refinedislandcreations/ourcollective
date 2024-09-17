@@ -471,8 +471,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-10p {
+  margin-bottom: 10%;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .mb-5p {
   margin-bottom: 5%;
@@ -480,14 +486,17 @@ a {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
+.mr-6 {
+  margin-right: 1.5rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .block {
   display: block;
-}
-.inline {
-  display: inline;
 }
 .flex {
   display: flex;
@@ -504,14 +513,14 @@ a {
 .h-lvh {
   height: 100lvh;
 }
-.min-h-30 {
-  min-height: 30vh;
-}
 .min-h-50 {
   min-height: 50vh;
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.w-44 {
+  width: 11rem;
 }
 .w-full {
   width: 100%;
@@ -531,9 +540,6 @@ a {
 .flex-col {
   flex-direction: column;
 }
-.items-end {
-  align-items: flex-end;
-}
 .items-center {
   align-items: center;
 }
@@ -545,6 +551,16 @@ a {
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .space-y-5p > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -578,6 +594,10 @@ a {
   padding-left: 10%;
   padding-right: 10%;
 }
+.px-15p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
@@ -600,8 +620,17 @@ a {
 .pb-2p {
   padding-bottom: 2%;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pb-5p {
   padding-bottom: 5%;
+}
+.pl-10p {
+  padding-left: 10%;
+}
+.pr-10p {
+  padding-right: 10%;
 }
 .pt-10p {
   padding-top: 10%;
@@ -609,33 +638,34 @@ a {
 .pt-15p {
   padding-top: 15%;
 }
-.pt-5p {
-  padding-top: 5%;
+.pt-2 {
+  padding-top: 0.5rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .text-center {
   text-align: center;
-}
-.text-right {
-  text-align: right;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-3xl {
-  font-size: 1.875rem;
+.text-4xl {
+  font-size: 2.25rem;
   line-height: 1;
 }
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
+.text-lg {
+  font-size: 1.125rem;;
+  line-height: 1.2;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.2;
-}
-.font-bold {
-  font-weight: 700;
 }
 .font-semibold {
   font-weight: 600;
@@ -646,10 +676,24 @@ a {
 .underline {
   text-decoration-line: underline;
 }
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -685,11 +729,22 @@ body {
 
 /* fonts */
 
-.dm-serif-display-regular {
+.main-title {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
 }
+
+.small-title {
+  text-transform: uppercase;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: 0.2rem;
+}
+
+
 
 .dm-serif-display-regular-italic {
   font-family: "DM Serif Display", serif;
@@ -778,6 +833,16 @@ header {
   background-color:#9da198;
 }
 
+.text-light {
+  color: #f2f0ed;
+}
+
+.section-border {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-color: #84897d;
+}
+
 
 .btn-grad {
   border: none; /* Remove the border */
@@ -817,28 +882,23 @@ header {
 }
 
 
-
-
-
-
-/* Essential styles for the polaroid effect */
-.polaroid-img {
-  transition: opacity 0.3s ease-in-out;
+.card {
+  transition: transform 0.5s ease-in-out;
 }
 
-.polaroid-overlay {
-  transition: opacity 0.3s ease-in-out;
+.card:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 640px) {
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
   .sm\:mt-10p {
     margin-top: 10%;
-  }
-  .sm\:min-h-50 {
-    min-height: 50vh;
   }
   .sm\:min-h-80 {
     min-height: 80vh;
@@ -862,14 +922,20 @@ header {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-5p {
-    margin-top: 5%;
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .md\:pr-10p {
-    padding-right: 10%;
+  .md\:items-end {
+    align-items: flex-end;
+  }
+  .md\:pr-10 {
+    padding-right: 2.5rem;
   }
 }
 
