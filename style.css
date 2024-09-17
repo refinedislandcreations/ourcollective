@@ -24,7 +24,7 @@ body {
     max-width: 100vw; /* Allow it to expand to the full width of the screen */
     background-color: #f2f0ed; 
     color:  #3f362b; 
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
 }
 
@@ -34,6 +34,20 @@ body {
     max-width: 1600px; /* Limit max-width to 1600px */
     margin: 0 auto; /* Center the container horizontally */
   }
+}
+
+/* fonts */
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Fixed header styles */
