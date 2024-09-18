@@ -42,8 +42,7 @@ body {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  letter-spacing: -0.025em;
 }
 
 .small-title {
@@ -155,11 +154,11 @@ header {
 
 .btn-grad {
   border: none; /* Remove the border */
-  border-radius: 0.25rem;
+  border-radius: 50px; /* Increase border-radius for pill shape */
   background-image: linear-gradient(to right, #a07d5b, #d6bfa4); /* Darker gradient */
-  background-size: 200% 200%;
-  color: #fff; 
-  padding: 0.5em 1em; /* Shorter button */
+  background-size: 300% 100%; /* Adjust background-size to animate across width */
+  color: #fff;
+  padding: 0.5em 1.5em; /* Adjust padding for better look */
   text-align: center;
   text-transform: uppercase;
   transition: background-position 0.5s, color 0.5s, box-shadow 0.5s, transform 0.3s;
@@ -170,7 +169,6 @@ header {
   animation: gradientAnimation 8s linear infinite; /* Smooth and continuous gradient animation */
 }
 
-
 .btn-grad:hover {
   background-position: right center; /* Gradient move on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Expand shadow */
@@ -179,16 +177,13 @@ header {
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: 100% 50%;
   }
 }
 
-.btn-grad {
-  animation: gradientAnimation 8s linear infinite; /* Smooth and continuous gradient animation */
-}
 
 
 .card {
