@@ -1,14 +1,18 @@
-$(document).ready(function() {
-    $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').toggleClass('active');
-        $('.hamburger-menu').toggleClass('active');
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeButton = document.getElementById('close-menu');
+
+    hamburgerButton.addEventListener('click', function() {
+      mobileMenu.classList.add('show');
     });
 
-    $('.close-button').click(function() {
-        $('.mobile-menu').removeClass('active');
-        $('.hamburger-menu').removeClass('active');
+    closeButton.addEventListener('click', function() {
+      mobileMenu.classList.remove('show');
     });
-});
+  });
+
 
 // AOS
 

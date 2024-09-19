@@ -4,12 +4,36 @@
       <a href="/" class="logo">
         <img src="/images/our-collective-logo.png" alt="" class="w-44">
       </a>
-      <nav class="text-white">
+      <nav class="hidden md:flex text-white">
         <a href="#" class="mx-4">Havening</a>
         <a href="#" class="mx-4">About</a>
         <a href="#" class="mx-4">Contact</a>
         <a href="#" class="ml-4 mr-6 underline underline-offset-4">Log In</a>
         <a href="#" class="btn-grad mx-4">Book A Call</a>
+      </nav>
+  
+      <!-- Hamburger Button for Small Screens -->
+      <div class="md:hidden flex items-center">
+        <button id="hamburger-button" aria-label="Open menu" class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <button id="close-menu" aria-label="Close menu" class="close-button">&times;</button>
+      <nav>
+        <a href="/index.html">
+            <img src="/images/our-collective-logo-white.png" alt="" class="w-44">
+        </a>
+        <a href="#" class="block py-2 px-4">Havening</a>
+        <a href="#" class="block py-2 px-4">About</a>
+        <a href="#" class="block py-2 px-4">Contact</a>
+        <a href="#" class="block py-2 px-4 underline">Log In</a>
+        <a href="#" class="block py-2 px-4 btn-grad">Book A Call</a>
       </nav>
     </div>
   
@@ -22,10 +46,10 @@
   
       <!-- Transparent Box with Text (Default for Small Screens) -->
       <div class="relative z-20 p-5 max-w-lg text-center bg-black bg-opacity-50 sm:bg-transparent sm:text-left sm:p-10 sm:max-w-none sm:col-span-1 sm:flex sm:items-center sm:justify-center sm:h-full">
-        <div class="nav-bg text-center sm:text-left">
-          <p class="small-title pb-2">{{ page.header.pretitle }}</p>
-          <p class="main-title text-5xl pb-5">{{ page.header.title }}</p>
-          <p class="px-4 mb-10">{{ page.header.subtitle }}</p>
+        <div class="nav-bg text-center sm:text-left p-10p">
+          <p class="small-title text-xs sm:text-s pb-2">{{ page.header.pretitle }}</p>
+          <p class="main-title text-3xl sm:text-5xl pb-5">{{ page.header.title }}</p>
+          <p class="px-4 mb-5p">{{ page.header.subtitle }}</p>
           <div data-aos="fade-down">
             <a href="#" class="btn-grad">{{ page.header.cta }}</a>
           </div>
@@ -33,6 +57,7 @@
       </div>
     </div>
   </header>
+  
   
   
   
