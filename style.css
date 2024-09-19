@@ -102,6 +102,14 @@ header {
 .g-bg-pos-r { background-position: right; }
 
 
+
+.nav-bg {
+  background-color: #f5f4efba;
+}
+
+
+
+
 /*Scroll to top button */ 
 
 .back-to-top-button-parent {

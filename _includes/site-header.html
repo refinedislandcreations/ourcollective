@@ -1,6 +1,54 @@
 <header class="relative max-w-screen-2xl mx-auto">
     <!-- Transparent Navigation -->
     <div class="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30">
+      <a href="/" class="logo">
+        <img src="/images/our-collective-logo.png" alt="" class="w-44">
+      </a>
+      <nav class="text-white">
+        <a href="#" class="mx-4">Havening</a>
+        <a href="#" class="mx-4">About</a>
+        <a href="#" class="mx-4">Contact</a>
+        <a href="#" class="ml-4 mr-6 underline underline-offset-4">Log In</a>
+        <a href="#" class="btn-grad mx-4">Book A Call</a>
+      </nav>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="relative flex flex-col min-h-screen items-center justify-center text-center sm:grid sm:grid-cols-2 sm:h-screen">
+      <!-- Image Column (Full Background on Small Screens) -->
+      <div class="absolute inset-0 sm:relative sm:w-full sm:h-full">
+        <img src="{{ page.header.image }}" alt="{{ page.header.image_alt }}" class="w-full h-screen object-cover sm:h-full" style="object-position: {{ page.header.image_position }};" />
+      </div>
+  
+      <!-- Transparent Box with Text (Default for Small Screens) -->
+      <div class="relative z-20 p-5 max-w-lg text-center bg-black bg-opacity-50 sm:bg-transparent sm:text-left sm:p-10 sm:max-w-none sm:col-span-1 sm:flex sm:items-center sm:justify-center sm:h-full">
+        <div class="nav-bg text-center sm:text-left">
+          <p class="small-title pb-2">{{ page.header.pretitle }}</p>
+          <p class="main-title text-5xl pb-5">{{ page.header.title }}</p>
+          <p class="px-4 mb-10">{{ page.header.subtitle }}</p>
+          <div data-aos="fade-down">
+            <a href="#" class="btn-grad">{{ page.header.cta }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  
+  
+  
+  
+
+
+
+
+<!---------
+              
+            
+<header class="relative max-w-screen-2xl mx-auto"></header>
+    -- Transparent Navigation --
+    <div class="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30">
         <a href="/" class="logo">
             <img src="/images/our-collective-logo.png" alt="" class="w-44">
         </a>
@@ -13,14 +61,14 @@
         </nav>
     </div>
 
-    <!-- Main Content -->
+    -- Main Content --
     <div class="relative min-h-screen grid grid-cols-1 sm:grid-cols-2">
-        <!-- Image Column -->
+        -- Image Column --
         <div class="relative w-full h-full">
             <img src="{{ page.header.image }}" alt="{{ page.header.image_alt }}" class="absolute inset-0 w-full h-full object-cover" style="object-position: {{ page.header.image_position }};" />
         </div>
 
-        <!-- Text Column -->
+        -- Text Column --
         <div class="relative z-20 flex flex-col items-center justify-center p-5p bg-opacity-75 sm:bg-transparent">
             <div class="text-center">
                 <p class="small-title pb-2p">{{ page.header.pretitle }}</p>
@@ -34,9 +82,4 @@
     </div>
 </header>
 
-
-
-
-
-              
-            
+------>
