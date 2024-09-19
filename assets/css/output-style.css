@@ -504,6 +504,9 @@ a {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-60 {
   height: 15rem;
 }
@@ -540,6 +543,9 @@ a {
 .flex-col {
   flex-direction: column;
 }
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
 .items-center {
   align-items: center;
 }
@@ -571,6 +577,9 @@ a {
 }
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -883,6 +892,15 @@ header {
 }
 
 @media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+  .sm\:inset-0 {
+    inset: 0px;
+  }
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -892,14 +910,41 @@ header {
   .sm\:mt-10p {
     margin-top: 10%;
   }
+  .sm\:block {
+    display: block;
+  }
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:hidden {
+    display: none;
+  }
+  .sm\:h-full {
+    height: 100%;
+  }
   .sm\:min-h-80 {
     min-height: 80vh;
+  }
+  .sm\:w-full {
+    width: 100%;
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+  .sm\:justify-center {
+    justify-content: center;
+  }
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
   .sm\:px-5p {
     padding-left: 5%;
@@ -910,6 +955,9 @@ header {
   }
   .sm\:pt-5p {
     padding-top: 5%;
+  }
+  .sm\:text-left {
+    text-align: left;
   }
 }
 
