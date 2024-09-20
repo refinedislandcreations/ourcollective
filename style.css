@@ -191,16 +191,26 @@ header {
 }
 
 
-
 .card {
   border-width: 4px;
   border-color: #84897d;
-  transition: transform 0.5s ease-in-out;
 }
 
-.card:hover {
-  transform: scale(1.05);
+
+
+@media (min-width:768px) {
+  .card {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
 }
+
+
+
 
 
 
