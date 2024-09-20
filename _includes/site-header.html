@@ -4,12 +4,12 @@
       <a href="/" class="logo">
         <img src="/images/our-collective-logo.png" alt="" class="w-44">
       </a>
-      <nav class="hidden md:flex text-white">
-        <a href="#" class="mx-4">Havening</a>
-        <a href="#" class="mx-4">About</a>
-        <a href="#" class="mx-4">Contact</a>
+      <nav class="hidden md:flex items-center space-x-4 text-white">
+        <a href="#">Havening</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
         <a href="#" class="ml-4 mr-6 underline underline-offset-4">Log In</a>
-        <a href="#" class="btn-grad mx-4">Book A Call</a>
+        <a href="#" class="btn-grad">Book A Call</a>
       </nav>
   
       <!-- Hamburger Button for Small Screens -->
@@ -27,7 +27,7 @@
       <button id="close-menu" aria-label="Close menu" class="close-button">&times;</button>
       <nav>
         <a href="/index.html">
-            <img src="/images/our-collective-logo-white.png" alt="" class="w-44">
+            <img src="/images/our-collective-logo-white.png" alt="" class="w-44 p-5p">
         </a>
         <a href="#" class="block py-2 px-4">Havening</a>
         <a href="#" class="block py-2 px-4">About</a>
@@ -38,18 +38,18 @@
     </div>
   
     <!-- Main Content -->
-    <div class="relative flex flex-col min-h-screen items-center justify-center text-center sm:grid sm:grid-cols-2 sm:h-screen">
+    <div class="relative flex flex-col min-h-screen items-center justify-center text-center sm:grid sm:grid-cols-2 sm:h-screen 2xl:mb-[45px]">
       <!-- Image Column (Full Background on Small Screens) -->
       <div class="absolute inset-0 sm:relative sm:w-full sm:h-full">
         <img src="{{ page.header.image }}" alt="{{ page.header.image_alt }}" class="w-full h-screen object-cover sm:h-full" style="object-position: {{ page.header.image_position }};" />
       </div>
   
       <!-- Transparent Box with Text (Default for Small Screens) -->
-      <div class="relative z-20 p-5 max-w-lg text-center bg-black bg-opacity-50 sm:bg-transparent sm:text-left sm:p-10 sm:max-w-none sm:col-span-1 sm:flex sm:items-center sm:justify-center sm:h-full">
-        <div class="nav-bg text-center sm:text-left p-10p">
+      <div class="relative z-20 mt-20p max-w-lg text-center bg-black bg-opacity-50 sm:bg-transparent sm:text-left sm:p-10 sm:max-w-none sm:col-span-1 sm:flex sm:items-center sm:justify-center sm:h-full">
+        <div class="nav-bg text-center p-10p">
           <p class="small-title text-xs sm:text-s pb-2">{{ page.header.pretitle }}</p>
           <p class="main-title text-3xl sm:text-5xl pb-5">{{ page.header.title }}</p>
-          <p class="px-4 mb-5p">{{ page.header.subtitle }}</p>
+          <p class="mb-5p">{{ page.header.subtitle }}</p>
           <div data-aos="fade-down">
             <a href="#" class="btn-grad">{{ page.header.cta }}</a>
           </div>
