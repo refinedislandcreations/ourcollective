@@ -43,6 +43,19 @@ AOS.init({
 
 });
 
+
+
+var allPanels = $('.accordion > .dd').hide();
+
+	$('.accordion > .dt > a').click(function() {    
+   $(this).toggleClass('open') 
+   $(this).parent().next().slideToggle() 
+
+   return false; 
+	});
+
+
+
 // lightgallery
 
 lightGallery(document.getElementById('lightgallery'), {

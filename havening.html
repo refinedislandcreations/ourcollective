@@ -19,6 +19,8 @@ havening:
   image: /images/temp.png
   position:
   alt:
+image-quote: /images/temp.png
+image-quote-position:
 ---
 
 <!-------Intro Section--------->
@@ -50,6 +52,9 @@ havening:
     </div>
   </section>
 
+
+
+
 <!-------How it works Section--------->
 <section class="relative max-w-screen-2xl mx-auto">
     <div class="bg-greenleaf text-light px-5p py-10p sm:py-5p section-border grid grid-cols-2">
@@ -64,16 +69,82 @@ havening:
     </div>
 </section>
 
-<!-------How it works Section--------->
+
+
+<!-------Benefits Section---------->
 <section class="relative max-w-screen-2xl mx-auto">
-    <div class="px-5p py-10p sm:py-5p grid grid-cols-2">
+    <div class="px-5p py-10p sm:py-5p grid sm:grid-cols-2 gap-y-5p">
+        <!-- First column with title -->
         <div>
             <p class="main-title text-2xl sm:text-6xl">The Benefits <br> of Havening</p>
         </div>
-        <div>
-            <p data-aos="fade-down" class="pb-2p">Experiences from our past, whether lived or perceived, can stick with us as we move through life. If it becomes encoded as a traumatic event, our brains create a stress response so that if similar situations arise, we’re protected from the pain.</p>
-            <p data-aos="fade-down" class="pb-2p">This severe response prevents our analytical selves from distinguishing when something is truly life-threatening (car accident) and something that’s not (an email from your boss). When this happens, our primitive emotions such as anger and fear start to run our lives. </p>
-            <p data-aos="fade-down">Havening Techniques harness the action of our brain’s Delta waves through therapeutic touch. Delta waves are similar to being in a dream state, where you switch off your analytical mind and invite calm, imagination and creativity.  A.k.a accessing those good vibes. It helps us remove stress receptors by revisiting our formative memories and detaching ourselves emotionally from these events.</p>
+        
+        <!-- Second column with accordion -->
+        <div class="flex flex-col space-y-4">
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-rapid.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-root.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-brain.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-----BG and Text-------->
+<section class="max-w-screen-2xl mx-auto">
+    <div class="mt-5p lg:mt-2p relative section-border">
+        <div class="bg-cover bg-no-repeat" 
+            style="background-image: url('{{ page.image-quote }}'); height: 24rem; background-position: {{ page.image-quote-position }};">
+            <div class="absolute inset-0 flex items-center justify-center p-5p">
+                <div class="bg-greenleaf text-light p-6 mx-10p rounded-lg text-center opacity-80">
+                    <p class="main-title text-2xl sm:text-4xl editable">Healing begins when we release the past and embrace the calm within.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-------FAQ Section---------->
+<section class="relative max-w-screen-2xl mx-auto">
+    <div class="px-5p py-10p sm:py-5p">
+
+        <p class="main-title text-2xl sm:text-6xl pb-5p">FAQs</p>
+
+        <div class="flex flex-col space-y-4">
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-length.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-many.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-cost.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-online.html %}
+                </div>
+            </div>
         </div>
     </div>
 </section>

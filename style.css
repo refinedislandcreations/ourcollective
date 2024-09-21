@@ -319,3 +319,48 @@ header {
     background-color: inherit;
   }
 }
+
+
+
+
+
+/* Accordion */
+
+.accordion .dt a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%; /* Ensure the link spans the entire width of the container */
+  padding-right: 1.5rem; /* Space for the + symbol */
+  text-decoration: none;
+}
+
+/* "+" Icon */
+.accordion .dt a::after {
+  content: "+";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0; /* Place the "+" at the end of the line */
+  transition: transform 0.3s ease-in-out;
+  color: inherit; /* Inherit the text color */
+}  
+
+/* Rotate "+" to "x" when opened */
+.accordion .dt a.open::after {
+  transform: rotate(45deg);
+}
+
+.accordion-drop {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-border {
+    border-top-width: 1.4px;
+    border-bottom-width: 1.4px;
+    border-color: #84897d;
+}
+
+.dd {
+  background-color:#9da1983d;
+}
