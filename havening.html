@@ -38,7 +38,7 @@ image-quote-position:
       <!-- Text Content -->
       <div class="col-span-1 flex flex-col justify-center sm:pr-10p text-center sm:text-left">
         <p class="pb-5p">These psycho-sensory techniques are based on neuroscience and intuitive touch. They can help permanently treat a range of different issues, such as:</p>
-        <ul class="main-title text-4xl" data-aos="fade-down">
+        <ul class="main-title text-2xl sm:text-3xl md:text-4xl" data-aos="fade-down">
             <li class="pb-2p"><i class="fa-solid fa-arrow-right"></i>Anxiety</li>
             <li class="pb-2p"><i class="fa-solid fa-arrow-right"></i>Phobias</li>
             <li class="pb-2p"><i class="fa-solid fa-arrow-right"></i>Stress & Burnout</li>
@@ -57,9 +57,12 @@ image-quote-position:
 
 <!-------How it works Section--------->
 <section class="relative max-w-screen-2xl mx-auto">
-    <div class="bg-greenleaf text-light px-5p py-10p sm:py-5p section-border grid grid-cols-2">
-        <div>
-            <p class="main-title text-2xl sm:text-6xl">How does <br> Havening <br> work?</p>
+    <div class="bg-greenleaf text-light px-5p py-10p sm:py-5p section-border sm:grid sm:grid-cols-2">
+        <div class="sm:hidden">
+            <p class="main-title text-2xl pb-5p">How does Havening work?</p>
+        </div>
+        <div class="hidden sm:block">
+            <p class="main-title text-6xl">How does <br> Havening <br> work?</p>
         </div>
         <div>
             <p data-aos="fade-down" class="pb-2p">Experiences from our past, whether lived or perceived, can stick with us as we move through life. If it becomes encoded as a traumatic event, our brains create a stress response so that if similar situations arise, we’re protected from the pain.</p>
@@ -73,10 +76,13 @@ image-quote-position:
 
 <!-------Benefits Section---------->
 <section class="relative max-w-screen-2xl mx-auto">
-    <div class="px-5p py-10p sm:py-5p grid sm:grid-cols-2 gap-y-5p">
+    <div class="px-5p py-10p sm:py-5p sm:grid sm:grid-cols-2 gap-y-5p">
         <!-- First column with title -->
-        <div>
-            <p class="main-title text-2xl sm:text-6xl">The Benefits <br> of Havening</p>
+        <div class="sm:hidden">
+            <p class="main-title text-2xl pb-5p">The Benefits of Havening</p>
+        </div>
+        <div class="hidden sm:block">
+            <p class="main-title text-6xl">The Benefits <br> of Havening</p>
         </div>
         
         <!-- Second column with accordion -->
@@ -104,7 +110,7 @@ image-quote-position:
 
 <!-----BG and Text-------->
 <section class="max-w-screen-2xl mx-auto">
-    <div class="mt-5p lg:mt-2p relative section-border">
+    <div class="sm:mt-5p 2xl:mt-0 lg:mt-2p relative section-border">
         <div class="bg-cover bg-no-repeat" 
             style="background-image: url('{{ page.image-quote }}'); height: 24rem; background-position: {{ page.image-quote-position }};">
             <div class="absolute inset-0 flex items-center justify-center p-5p">
@@ -122,7 +128,7 @@ image-quote-position:
 <section class="relative max-w-screen-2xl mx-auto">
     <div class="px-5p py-10p sm:py-5p">
 
-        <p class="main-title text-2xl sm:text-6xl pb-5p">FAQs</p>
+        <p class="main-title text-2xl sm:text-6xl pb-5p 2xl:pb-2p">FAQs</p>
 
         <div class="flex flex-col space-y-4">
             <div>
@@ -145,6 +151,22 @@ image-quote-position:
                     {% include accordion-online.html %}
                 </div>
             </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-therapies.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-other-therapies.html %}
+                </div>
+            </div>
+            <div>
+                <div class="accordion-border">
+                    {% include accordion-cause.html %}
+                </div>
+            </div>
         </div>
+        
     </div>
 </section>

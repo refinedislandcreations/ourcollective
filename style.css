@@ -130,8 +130,8 @@ header {
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color:  pink; 
-  color: white; 
+  background-color: #ba8e63;
+  color: #f2f0ed;  
   cursor: pointer; 
   width: 30px; 
   height: 30px; 
@@ -144,8 +144,8 @@ header {
 
 
 .myBtn:hover {
-  color:purple;
-  background-color: green; 
+  color:#f2f0ed;
+  background-color:#b28151; 
 }
 
 
